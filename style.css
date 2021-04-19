@@ -1,0 +1,440 @@
+body{
+  margin: 0px;
+  animation: transitionIn 2s
+}
+
+@keyframes transitionIn {
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+
+
+
+
+
+
+.homePage{
+  background-image:linear-gradient(rgba(0, 0,0,0.1),rgba(25, 25,25, 0.5), rgba(50, 50,50, 0.7), rgba(54, 27, 77, 1)), url("asets/Home.jpg");
+  background-position:  top;
+  width:100%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  size: contain;
+  background-color: #130030;
+  margin: 0px;
+  position: inherit;
+
+}
+.homeText{
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  padding-top: 35vh;
+  text-shadow: 0 0 50px #1ffbff,
+  0 0 100px #1ffbff,
+  0 0 150px #1ffbff,
+  0 0 200px #1ffbff,
+  0 0 250px #1ffbff,
+  0 0 300px #1ffbff;
+  animation: homeGlow 5s linear infinite;
+}
+@keyframes homeGlow {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.homeButton{
+  padding: 100px;
+  text-align:center;
+}
+
+
+#homeButton{
+  color:#1ffbff;
+  position: relative;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color:transparent;
+  border: 2px solid white;;
+  transition: 1s;
+
+}
+#homeButton:hover{
+  border:10px solid #1ffbff;
+}
+
+
+
+
+
+
+
+.intro{
+padding-top: 100px;
+height: 500px;
+background-image: linear-gradient(rgba(54, 27, 77,1),rgba(72, 171, 199, 1),rgba(235, 253, 255, 1));
+
+
+}
+.introHeroText{
+
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 3em;
+}
+.introText{
+  margin: 300px;
+  margin-top: 0px;
+
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1480px) {
+.homePage{
+  background-size:cover;
+}}
+@media only screen and (max-width:1480px) {
+  .homePage{
+    height: auto;
+    width: auto;
+    background-size: cover;
+}
+  .homeText{
+    padding-top: 10vh;
+  }
+#homeButton{
+  display: none;
+}}
+
+.centerContainer{
+  width: auto;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color:#ebfdff;
+}
+
+
+.leftText{
+  float:left;
+}
+
+.imgWrapper{
+
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+@keyframes imgMov {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(50%);
+  }
+}
+
+
+.spinHS{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.spinCirc{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  animation: spin 15s linear 0s infinite normal;
+}
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+.rightContainer{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.textContainer{
+  font-family: 'Merriweather', serif;
+  width: 90%;
+  background-color:;/*#d4faff*/
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+.text1{
+
+}
+.img1{
+  display: none;
+  background-size: contain;
+  float: right;
+  width:100px; height:100px;
+}
+
+.page1{
+  background-color: #c0e3fa;/*#6fbcc7*/
+  padding: 10px;
+  cursor: pointer;
+  transition:1s;
+  animation-fill-mode: forwards;
+}
+.page1:hover{
+  transition: 1s;
+  color: white;
+  background-color: #41454d;
+  transform:scale(1.1);
+}
+
+.page2{
+  background-color:#c0e3fa ;
+  padding: 10px;
+  transition:  1s;
+  animation-fill-mode: forwards;
+
+}
+.page2:hover{
+  color: white;
+  background-color: #41454d;
+  transition: 1s;
+  transform:scale(1.1);
+}
+
+.page3{
+  background-color:#c0e3fa;
+  padding: 10px;
+    transition:  1s;
+  animation-fill-mode: forwards;
+}
+.page3:hover{
+  color: white;
+  background-color: #41454d;
+  transition: 1s;
+  transform:scale(1.1);
+}
+
+.page4{
+  background-color:#c0e3fa;
+  padding: 10px;
+    transition:  1s;
+  animation-fill-mode: forwards;
+}
+.page4:hover{
+  color: white;
+  background-color: #41454d;
+  transition: 1s;
+  transform:scale(1.1);
+}
+.page5{
+  background-color:#c0e3fa;
+  padding: 10px;
+    transition:  1s;
+  animation-fill-mode: forwards;
+}
+.page5:hover{
+  color: white;
+  background-color: #41454d;
+  transition: 1s;
+  transform:scale(1.1);
+}
+
+@keyframes diss {
+  0%{
+    opacity: 100;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes textContainer1 {
+  0%{
+    transform: translate(0%);
+  }
+  40%{
+    transform: translate(-50%);
+    background-color: inherit;
+    }
+  70%{
+    background-color: #41454d;
+    }
+  100%{
+    transform: scale(10);
+    background-color: #41454d;
+  }
+}
+
+@keyframes textContainer2 {
+  0%{
+    transform: translate(0%);
+  }
+  50%{
+    transform: translate(-50%);
+    background-color: inherit;
+  }
+  100%{
+    transform: scale(10);
+    background-color:#41454d;
+  }
+}
+@keyframes page2 {
+  0%{
+    opacity: 100;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@keyframes textContainer3 {
+  0%{
+    transform: translate(0%);
+  }
+  50%{
+    transform: translate(-50%);
+    background-color: inherit;
+  }
+  100%{
+    transform: scale(5);
+    background-color:  #41454d;
+  }
+}
+@keyframes page3 {
+  0%{
+    opacity: 100;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@keyframes textContainer4 {
+  0%{
+    transform: translate(0%);
+  }
+  50%{
+    transform: translate(-50%);
+    background-color: inherit;
+  }
+  100%{
+    transform: scale(5);
+    background-color:  #41454d;
+  }
+}
+@keyframes page4 {
+  0%{
+    opacity: 100;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@keyframes textContainer5 {
+  0%{
+    transform: translate(0%);
+  }
+  50%{
+    transform: translate(-50%);
+    background-color: inherit;
+  }
+  100%{
+    transform: scale(5);
+    background-color:  #41454d;
+  }
+}
+@keyframes page5 {
+  0%{
+    opacity: 100;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+
+
+@media only screen and (max-width:1000px) {
+  .intro{
+    height: 700px;
+  }
+  .introText{
+    margin: 150px;
+    margin-top:50px;
+  }
+}
+
+@media only screen and (max-width:900px) {
+
+  .centerContainer{
+    height: 80vh;
+    display: grid;
+    grid-template-rows:  50% 50%;
+    grid-template-columns: none;
+  }
+  .rightContainer{
+  justify-content: none;
+
+  }
+}
